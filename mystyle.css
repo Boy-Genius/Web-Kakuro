@@ -23,6 +23,7 @@
   -webkit-text-fill-color: black;
   text-align: center;
   
+  
 }
 *{
   text-align:center;
@@ -56,3 +57,42 @@ height: 100%; width: 100%;
     font-size: 45px;
     width: 30%;
   }
+.right{
+  margin-left: 50%; /*How much right i want it */
+  margin-top: -10;
+  max-width: 30;
+  max-height:30;
+  font-size: 20px;
+  font-weight: 900;
+  background: transparent;
+  color: grey;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: black;
+  background: transparent;
+  
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+       appearance: textfield;
+
+
+}
+.down{
+  margin-right: 45%; /*How much left i want it */
+  margin-bottom: -10px;
+  max-width: 30;
+  max-height:30;
+  font-size: 20px;
+  font-weight: 900;
+  background: transparent;
+  color: grey;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: black;
+  background: transparent;
+
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+       appearance: textfield;
+
+
+}
+
