@@ -19,19 +19,42 @@ for ($i=1; $i < 10; $i++) {
     for ($j=1; $j < 10; $j++) {
     echo '<td>';
     if ($_GET[tristate."$i$j"]==""){
-    echo '<input class=sqare2 type=number max=9 min=1 name='.$i.$j.'>';
+    echo '  <select  name='.$i.$j.' class=square2> 
+            <option ></option>
+            ';
+            for ($n=1; $n < 10; $n++) { 
+              echo '<option value='.$n.'>'.$n.'</option>';  
+            }
+            echo '</select>';
     }
 	elseif($_GET[tristate."$i$j"]=="╲")
 	{    
         ##echo '<input class=known readonly=true name=test value='.$_GET[tristate."$i$j"].'>';
 	echo 
-'<div class=known> 
-
-<input class=right type=number name=test >
-
-<input class=down type=number name=test2 >
-</div>';
-
+        '<div class=slashBackground > 
+        <input class=known readonly=true name='.$i.$j.' value='.$_GET[tristate."$i$j"].'>
+        </div>
+        <div class=dualinput>
+        <select  name='.$i.$j.'R class=right> 
+        <option ></option>
+        ';
+        for ($n=1; $n < 100; $n++) { 
+          echo '<option value='.$n.'>'.$n.'</option>';  
+        }
+    echo
+        '
+        </select>
+        <select  name='.$i.$j.'R class=down> 
+        <option ></option>
+        ';
+        for ($n=1; $n < 100; $n++) { 
+          echo '<option value='.$n.'>'.$n.'</option>';  
+        }
+    echo
+        '
+        </select>
+        </div>
+        ';
     }
 
 	

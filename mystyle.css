@@ -1,6 +1,6 @@
-.sqare2{
-  max-width: 55;
-  max-height:55;
+.square2{
+  width: 55;
+  height:55;
   font-size: 45px;
   font-weight: 900;
   background: transparent;
@@ -10,6 +10,9 @@
   -webkit-text-fill-color: black;
   background: transparent;
   border: none;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 .known{
   max-width: 55;
@@ -69,14 +72,14 @@ height: 100%; width: 100%;
   -webkit-text-stroke-width: 1px;
   -webkit-text-fill-color: black;
   background: transparent;
-  
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
-       appearance: textfield;
-
-
+  appearance: textfield;
+  position: relative;
+  z-index: 100;
+  border: 0;
 }
-.down{
+.down{ 
   margin-right: 45%; /*How much left i want it */
   margin-bottom: -10px;
   max-width: 30;
@@ -88,11 +91,23 @@ height: 100%; width: 100%;
   -webkit-text-stroke-width: 1px;
   -webkit-text-fill-color: black;
   background: transparent;
-
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
-       appearance: textfield;
-
-
+  appearance: textfield;
+  position: relative;
+  z-index: 100;
+  border: 0;
 }
-
+.dualinput{
+  position: relative;
+  z-index: 100;
+  max-width: 55;
+  max-height:55;
+}
+.slashBackground{
+  position: absolute;
+  max-width: 25;
+  max-height:25;
+  z-index: -100;     margin-left: 0;
+  margin-top: -10; ;transform: rotate(-10deg); 
+}
