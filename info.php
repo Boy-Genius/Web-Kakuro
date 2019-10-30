@@ -18,7 +18,7 @@ for ($i=1; $i < 10; $i++) {
     echo '<tr>';
     for ($j=1; $j < 10; $j++) {
     echo '<td>';
-    if ($_GET[tristate."$i$j"]==""){
+    if ($_GET['tristate."$i$j"']==""){
     echo '  <select  name='.$i.$j.' class=square2> 
             <option ></option>
             ';
