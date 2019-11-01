@@ -1,4 +1,3 @@
-<?php include 'calc.php';?>
 
 <?php 
 echo # insert top html code...
@@ -41,4 +40,5 @@ echo "</tr>";
 }
 ?>
 
+<?php include 'calc.php';?>
 
