@@ -1,5 +1,6 @@
 
 <?php
+ini_set('display_errors', '0'); #disables debugging output for user!
 echo # insert top html code...
 '
 <html>
