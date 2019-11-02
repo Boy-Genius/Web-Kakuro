@@ -1,6 +1,6 @@
-
+<!--Hello there! this file's porpuse is to generate the number inputs page#-->
 <?php
-ini_set('display_errors', '0'); #disables debugging output for user!
+#ini_set('display_errors', '0'); #disables debugging output for user!
 echo # insert top html code...
 '
 <html>
@@ -19,7 +19,7 @@ for ($i=1; $i < 10; $i++) {
     echo '<tr>';
     for ($j=1; $j < 10; $j++) {
     echo '<td>';
-    if ($_GET[tristate."$i$j"]==""){
+    if ($_GET["tristate"."$i$j"]==""){
     echo '  <select  name='.$i.$j.' class=square2> 
             <option ></option>
             ';
@@ -28,12 +28,12 @@ for ($i=1; $i < 10; $i++) {
             }
             echo '</select>';
     }
-	elseif($_GET[tristate."$i$j"]=="╲")
+	elseif($_GET["tristate"."$i$j"]=="╲")
 	{    
         ##echo '<input class=known readonly=true name=test value='.$_GET[tristate."$i$j"].'>';
 	echo 
         '<div class=slashBackground > 
-        <input class=known readonly=true name='.$i.$j.' value='.$_GET[tristate."$i$j"].'>
+        <input class=known readonly=true name='.$i.$j.' value='.$_GET["tristate"."$i$j"].'>
         </div>
         <div class=dualinput>
         <select  name='.$i.$j.'R class=right> 
@@ -60,7 +60,7 @@ for ($i=1; $i < 10; $i++) {
 
 	
     else{    
-        echo '<input class=known readonly=true name='.$i.$j.' value='.$_GET[tristate."$i$j"].'>';
+        echo '<input class=known readonly=true name='.$i.$j.' value='.$_GET["tristate"."$i$j"].'>';
     }
 
     echo '</td>';
